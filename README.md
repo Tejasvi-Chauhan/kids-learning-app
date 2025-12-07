@@ -47,6 +47,7 @@ The goal of this project was to match the provided UI screenshots as closely as 
 
 ## 🛠 How to Run the Project
     npm run dev
+    
 ### 1. Clone the repository
 
 
@@ -65,4 +66,27 @@ cd kids-english-ui
 - Quiz generation button and inputs are UI-only and do not perform real logic.
 - All spacing, shadows, and card styles are matched visually from screenshots as closely as possible without exact Figma specs.
        
+## 📁 Folder Structure
+
+The project follows a clean, mobile-first folder architecture:
+src/
+  components/
+    layout/               
+      AppShell.jsx        # Main layout wrapper (mobile frame + bottom nav)
+      BottomNav.jsx       # Navigation bar for Home / Learn / Call / Profile
+
+  pages/
+    Home.jsx              # Home / Dashboard screen
+    CustomQuiz.jsx        # Craft a custom quiz screen
+    NowPlaying.jsx        # Audio player screen
+
+  assets/
+    doraemon.png          # Sample assets (optional)
+    spiderman.png
+    story-cover.jpg
+
+  App.jsx                 # App routes + layout
+  main.jsx                # React entry file
+  index.css               # Tailwind setup + global styles
+
 
